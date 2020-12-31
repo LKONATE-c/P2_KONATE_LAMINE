@@ -1,0 +1,21 @@
+ul
+{
+    text-align: right;
+      
+}
+li{
+    display: inline;
+}
+.nav
+{
+    display: flex;
+    flex-direction: row;
+}
+
+img{
+    width: 1OOpx;
+    height: 100px;
+}
+
+
+    
