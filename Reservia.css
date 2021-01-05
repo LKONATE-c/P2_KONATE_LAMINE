@@ -7,7 +7,7 @@
 
 ul
 {
-    text-align: right;
+    text-align:right ;
     font-family: "Raleway-Black" sans-serif;
     color:  #0065FC;
     
@@ -37,26 +37,50 @@ li{
     border-top-right-radius:16px 16px ;
     border-bottom-right-radius: 16px 16px;
     color:#0065FC ;
-
+border-left: none;
 }
 
-.button{
+.button
+{
     background-color:#0065FC ;
     border: none;
     color: white;
 }
 
-input{
+input
+{
     padding: 0.9em ;
     
 }
  
+    
+
 .eco
 {
     display: flex;
-    justify-content: space-between;
+ 
+    
+}
+
+
+
+.buttonf
+{
+    border-top-right-radius:20px 20px ;
+    border-bottom-right-radius: 20px 20px;
+    padding: 0.8em;
+    color: black;
+    background-color: white ;
+    border-left: none;
 }
     
+.fas
+{
+
+border-radius: 50%;
+color:#0065FC ;
+
+}
       
 img {
         
