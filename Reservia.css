@@ -5,19 +5,53 @@
    }
 
 
-ul
+
+ .titrep
+ {
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    width: 100%;
+    align-content:space-between;
+    justify-content:space-between;
+    margin-bottom: 4em;
+ }  
+
+ .reservia
+ {
+width:110%;
+ }
+.menu
 {
-    text-align:right ;
-    font-family: "Raleway-Black" sans-serif;
-    color:  #0065FC;
     
-      
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    justify-content: space-between;
+    color:  #0065FC;
+    height: 15px;
+    width: 300px;
+    margin-top: 3em;
+    padding-right: 1em;
 }
 
-li{
-    display: inline;
+.menu :hover
+{
+   border-top: 3px solid #0065FC; 
+   margin-top: 30em;
+}
+.menu li
+{
+    list-style-type: none;
+    
    
 }
+
+
+.activite {
+    color: black;
+}
+
 .nav
 {
     display: flex;
@@ -45,25 +79,36 @@ border-left: none;
     background-color:#0065FC ;
     border: none;
     color: white;
+    border-left: none;
 }
 
 input
 {
     padding: 0.9em ;
+    border-left: none;
+    border-color: #F2F2F2;
+    border-right: none;
+    
     
 }
- 
-    
 
-.eco
+
+.menub
 {
     display: flex;
- 
+    flex-direction: column;
+    font-family: "Raleway-Black",arial,serif;
     
 }
 
-
-
+.liste-filtres {background-color: ;
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+    align-content: space-between;
+    justify-content: space-between;
+    
+}
 .buttonf
 {
     border-top-right-radius:20px 20px ;
@@ -74,13 +119,12 @@ input
     border-left: none;
 }
     
-.fas
-{
 
-border-radius: 50%;
-color:#0065FC ;
 
-}
+
+
+
+
       
 img {
         
@@ -90,7 +134,4 @@ img {
     padding: 5px;
     width: 150px;
   }
-
-
-
 
