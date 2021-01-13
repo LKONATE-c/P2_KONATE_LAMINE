@@ -6,7 +6,7 @@
 
 
 
- .titrep
+ #titrep
  {
     display: flex;
     flex-direction: row;
@@ -17,7 +17,7 @@
     margin-bottom: 4em;
  }  
 
- .reservia
+ #titrep img
  {
 width:110%;
  }
@@ -31,21 +31,22 @@ width:110%;
     color:  #0065FC;
     height: 15px;
     width: 300px;
-    margin-top: 3em;
+    
     padding-right: 1em;
+    
+}
+.menu p
+{
+    border-top: 3px solid transparent;
+    padding-top: 40px;
+    width: 80px;
+}
+.menu p:hover
+{
+  
+border-top-color: #0065FC;
 }
 
-.menu :hover
-{
-   border-top: 3px solid #0065FC; 
-   margin-top: 30em;
-}
-.menu li
-{
-    list-style-type: none;
-    
-   
-}
 
 
 .activite {
@@ -71,7 +72,7 @@ width:110%;
     border-top-right-radius:16px 16px ;
     border-bottom-right-radius: 16px 16px;
     color:#0065FC ;
-border-left: none;
+    border-left: none;
 }
 
 .button
@@ -85,53 +86,186 @@ border-left: none;
 input
 {
     padding: 0.9em ;
-    border-left: none;
+    border:none ;
     border-color: #F2F2F2;
-    border-right: none;
+    color: black;
     
     
 }
+input::placeholder
+{
+    color: black;
+    font-weight: 800;
+}
+    
 
 
 .menub
 {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     font-family: "Raleway-Black",arial,serif;
+}  
+
+
+
+.liste-filtres
+ {
+    
+    display: flex;
+    
+    align-content: space-between;
+    list-style-type:none ;
+    width: 70%;
+}
+.buttonf
+{   display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    border: 1px solid #DEEBFF;
+    color:black;
+    background-color: white ;
+    align-content:space-around;
+    padding-left: 0px;
+    border-spacing: 0px;
+    margin-right: 20px;
+}
+body > div > ul > li > button > strong
+{
+    padding: 10px;
     
 }
+h3{
+    padding: 0.4em;
+}
+.filtre
+{
+    border-radius: 50%;
+    color:#0065FC ;
+    padding:12px;
+    background-color: lightblue;
+    
+}
+    
 
-.liste-filtres {background-color: ;
+
+.fa-info-circle
+{
+   background-color: #0065FC;
+   color: white;
+}
+
+
+.contenaire
+{
     display: flex;
-    flex-direction: row;
-    width: 600px;
-    align-content: space-between;
     justify-content: space-between;
     
 }
-.buttonf
+.contenu
 {
-    border-top-right-radius:20px 20px ;
-    border-bottom-right-radius: 20px 20px;
-    padding: 0.8em;
-    color: black;
-    background-color: white ;
-    border-left: none;
+    background-color:#F2F2F2;
+    border-radius: 8px;
+    height: 900px;
+    display: flex;
+    justify-content: space-between;
+    border:1px solid #F2F2F2;
+    padding: 20px;
+}
+.hébergement
+{  
+    width: 70%;
+    
+    
+}
+.populaire
+{
+    float: right;
+    width: 20%;
+    flex-direction: column;
+    border:1px solid #F2F2F2;
+    
+}
+
+.lieu
+{   
+    background-color: white;
+    height: 150px;
+    width: 100px;
+    margin: 16px 16px;
+    
+    border-radius:  20px 20px ;
+    padding-top: 0.5em;
+    padding-right: 5.5em;
+    padding-left: 0.5em;
+    padding-bottom: 2.5em;
+    border: 1px solid #ddd;
+    font-size: 10px;
 }
     
-
-
-
-
-
-
-      
-img {
-        
+.photoh
+{
     border: 1px solid #ddd;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
-    padding: 5px;
     width: 150px;
+
+}
+
+
+.fa-star{
+    color: #0065FC;
+}
+
+
+.gris
+{
+    color: grey;
+    
+}
+
+.photop
+{
+    border: 1px solid #ddd;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    width: 150px;
+
+}
+img
+  {
+    
+    border: 1px solid #ddd;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    width: 150px;
+    
   }
+.footage
+{
+    border:1px solid #F2F2F2;
+    background-color: #F2F2F2 ;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+}
+.info
+{
+    
+    padding-left: 20px;
+    padding-right:250px;
+
+}
+
+
+@media   (max-width: 414px)
+{
+    .menu 
+    {
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+    
+
+}
 
