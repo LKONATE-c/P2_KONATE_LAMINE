@@ -136,7 +136,7 @@ body > div > ul > li > button > strong
     
 }
 h3{
-    padding: 0.4em;
+    padding: 0.5em;
 }
 .filtre
 {
@@ -166,41 +166,53 @@ h3{
 {
     background-color:#F2F2F2;
     border-radius: 8px;
-    height: 900px;
-    display: flex;
+    height: 700px;
+    
     justify-content: space-between;
     border:1px solid #F2F2F2;
     padding: 20px;
 }
 .hébergement
 {  
-    width: 70%;
+    width: 60%;
     
     
 }
+.herbergement-flex
+{
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 200px;
+}
+
+h4
+{ 
+    font-size: 20px;
+}
+
 .populaire
 {
     float: right;
-    width: 20%;
-    flex-direction: column;
+    width: 23%;
     border:1px solid #F2F2F2;
-    
+    display: grid;
+    min-width: 200px;
 }
 
 .lieu
 {   
     background-color: white;
     height: 150px;
-    width: 100px;
-    margin: 16px 16px;
-    
+    width: 200px;
+    margin: 20px 20px;
     border-radius:  20px 20px ;
-    padding-top: 0.5em;
-    padding-right: 5.5em;
+    padding-top: 0.2em; 
     padding-left: 0.5em;
-    padding-bottom: 2.5em;
+    padding-bottom: 5em;
     border: 1px solid #ddd;
-    font-size: 10px;
+    font-size: 13px;
+    text-align:left;
+    
 }
     
 .photoh
@@ -208,8 +220,10 @@ h3{
     border: 1px solid #ddd;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
-    width: 150px;
-
+    width: 190px;
+    height: 100px;
+    margin-top: 2px;
+    justify-content: center;
 }
 
 
@@ -224,22 +238,105 @@ h3{
     
 }
 
+
+
+
+.fa-chart-line
+{
+padding: 1.5em;
+
+}
+
+.topopu
+{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.popu
+{
+
+    background-color: white;
+    border-radius: 20px;
+    height: 120px;
+    width: 260px;
+    margin: 20px 20px;
+    padding-top: 0.5em;
+    padding-bottom: 4em;
+    border: 1px solid #ddd;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-around;
+    
+}
 .photop
 {
     border: 1px solid #ddd;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
-    width: 150px;
+    width: 75px;
+    height: 150px;
+    
 
 }
+
+
+.Activités
+{
+    
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.acta
+{
+    background-color: violet;
+    height: 400px;
+    width: 25%;
+    min-width: 200px;
+
+}
+
+.actb
+{  background-color: yellow;
+   height:400px;
+   width:25%;
+   min-width: 200px;
+   padding-bottom: 2em;
+}
+
+.actiphoto
+{
+    height: 300px;
+    border-radius: 8px;
+    
+}
+
+.actiphotob
+{
+
+    height: 150px;
+    width:300px;
+    border-radius: 8px;
+}
+
+.actiphotoc
+{
+    height: 100px;
+    width: 300px;
+    border-radius: 8px;
+}
+
+    
 img
   {
     
     border: 1px solid #ddd;
     border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    width: 150px;
-    
+    height: 100%;
+    max-width: 100%;
+    object-fit:cover ;
   }
 .footage
 {
@@ -258,14 +355,36 @@ img
 }
 
 
-@media   (max-width: 414px)
+@media   (max-width: 414px) and (max-width:1024)
 {
     .menu 
     {
         display: flex;
-        flex-wrap: wrap-reverse;
+    
+    }
+
+    .contenaire
+    {
+        flex-direction: column-reverse;
+        width: 100%;
     }
     
+    .populaire
+    {
+        width: 100%;
+        padding-left: 0px;
+        border-radius: 0px;
+    }
+
+
+    
+    .hébergement
+    {
+        width: 100%;
+        background-color: white;
+        border-radius: 0px;
+    }
+
 
 }
 
