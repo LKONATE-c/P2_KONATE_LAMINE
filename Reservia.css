@@ -1,20 +1,28 @@
 @font-face {
-    font-family: "Raleway-Black";
+    font-family: "Raleway";
     src: url("/font/Raleway-Black.ttf") format("truetype");
            
    }
 
+p 
+{
+    font-family: "Raleway" ,sans-serif 
 
+    
+}
 
+a
+{
+    text-decoration: none;
+
+}
  #titrep
  {
     display: flex;
-    flex-direction: row;
-    height: 60px;
-    width: 100%;
+    
     align-content:space-between;
     justify-content:space-between;
-    margin-bottom: 4em;
+
  }  
 
  #titrep img
@@ -26,31 +34,36 @@ width:110%;
     
     display: flex;
     flex-direction: row;
-    align-content: space-between;
     justify-content: space-between;
-    color:  #0065FC;
     height: 15px;
-    width: 300px;
+    width: 400px;
+
     
-    padding-right: 1em;
-    
+}
+
+.menu a
+{   
+    text-decoration: none;
+    color:  #0065FC;
 }
 .menu p
 {
     border-top: 3px solid transparent;
-    padding-top: 40px;
+    padding-top: 20px;
     width: 80px;
+    color: #0065FC;
+    justify-content: space-around;
 }
 .menu p:hover
 {
-  
+
 border-top-color: #0065FC;
 }
 
 
 
 .activite {
-    color: black;
+    color: black !important;
 }
 
 .nav
@@ -74,6 +87,8 @@ border-top-color: #0065FC;
     color:#0065FC ;
     border-left: none;
 }
+
+ 
 
 .button
 {
@@ -103,8 +118,8 @@ input::placeholder
 .menub
 {
     display: flex;
-    flex-direction: row;
-    font-family: "Raleway-Black",arial,serif;
+    font-family: "Raleway",arial,serif;
+    
 }  
 
 
@@ -113,10 +128,9 @@ input::placeholder
  {
     
     display: flex;
-    
-    align-content: space-between;
+    align-content: space-around;
     list-style-type:none ;
-    width: 70%;
+    
 }
 .buttonf
 {   display: flex;
@@ -151,8 +165,10 @@ h3{
 
 .fa-info
 {
+    border:1px solid #F2F2F2;
+    border-radius: 50%;
+    color:#0065FC;
    
-   color:#0065FC;
 }
 
 
@@ -166,19 +182,18 @@ h3{
 {
     background-color:#F2F2F2;
     border-radius: 8px;
-    height: 700px;
-    
+    height: auto;
     justify-content: space-between;
     border:1px solid #F2F2F2;
     padding: 20px;
 }
-.hébergement
+#hébergement
 {  
-    width: 60%;
+    width: 58%;
     
     
 }
-.herbergement-flex
+.hebergement-flex
 {
     display: flex;
     flex-wrap: wrap;
@@ -193,9 +208,10 @@ h4
 .populaire
 {
 
-    width: 23%;
+    width: 27%;
     border:1px solid #F2F2F2;
     min-width: 200px;
+    padding-right: 10px;
 }
 
 .lieu
@@ -261,7 +277,7 @@ padding: 1.5em;
     width: 260px;
     margin: 20px 20px;
     padding-top: 0.5em;
-    padding-bottom: 4em;
+    padding-bottom: 3em;
     border: 1px solid #ddd;
     font-size: 12px;
     display: flex;
@@ -291,7 +307,7 @@ flex-direction: column;
 }
 
 
-.Activités
+#Activités
 {
     
     justify-content: space-between;
@@ -368,14 +384,14 @@ flex-direction: column;
     height: 300px;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
-    
+    width: 100%;
 }
 
 .actiphotob
 {
 
     height: 150px;
-    width:300px;
+    width:100%;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
 }
@@ -383,7 +399,7 @@ flex-direction: column;
 .actiphotoc
 {
     height: 100px;
-    width: 300px;
+    width: 100%;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
 }
@@ -391,7 +407,7 @@ flex-direction: column;
 .actiphotod
 {
     height: 120px;
-    width: 300px;
+    width: 100%;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
 
@@ -402,13 +418,13 @@ flex-direction: column;
 img
   {
     
-    border: 1px solid #ddd;
+    
     border-top-left-radius: 8px;
     height: 100%;
     max-width: 100%;
     object-fit:cover ;
   }
-.footage
+.endtext
 {
     border:1px solid #F2F2F2;
     background-color: #F2F2F2 ;
@@ -427,34 +443,113 @@ img
 
 @media   (max-width: 414px) 
 {
-    .menu 
+
+    #titrep
     {
-        display: flex;
+        max-width: 500px;
+    }
+    
+    .menu /*todo*/
+    {
+        width:100px;
+    }
+    
+        
+    
+
+    .menu p:nth-child(1)
+    {
+        order: 2;
+        flex-wrap: wrap;
+    }
+    
+    .menu p:nth-child(2)
+    {
+        order: 3;
+
+    }
+
+    .menu p:nth-child(3)
+    {
+
+        order: 1;
+    }
+    .menu p
+    {
+
+        padding-top: 15px;
+    }
+
+    .menu p:hover
+    {
+        color: #0065FC;
+        border-bottom-color: #0065FC;
     
     }
+    
+   
+    .menub
+    {
+    max-width: 150PX;
+    flex-wrap: wrap;
+    }
+    
 
     .contenaire
     {
         flex-direction: column-reverse;
-        width: 100%;
+        
     }
     
     .populaire
     {
-        width: 100%;
-        padding-left: 0px;
+        width: auto;
+    
         border-radius: 0px;
     }
 
 
     
-    .hébergement
+    #hébergement
     {
         width: 100%;
         background-color: white;
         border-radius: 0px;
     }
 
+
+    .acta
+    {
+        
+        height: auto;
+        width: 80%;
+        margin-top: 4%;
+        margin-bottom: 4%;
+        
+    }
+
+    .actb
+    {
+        height: auto;
+        width: 80%;
+    }
+
+
+    .actiphoto
+{
+    height: 150px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    
+    
+}
+
+    .footage
+    {
+        flex-direction: column;
+
+
+    }
 
 }
 
