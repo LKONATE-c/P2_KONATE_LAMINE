@@ -457,12 +457,8 @@ img
 
 @media (min-width:360px) and (max-width: 1024px) 
 {
-    Img
-    {
-        padding-top: 28px;
-        margin-right: 75px;
-        height: auto;
-    }
+    
+    
     
     .menu a:hover
     {
@@ -527,10 +523,13 @@ img
     
     flex-wrap: wrap;
     }
+    
     .romantique
     {
         padding-top: 10px;
+        padding-bottom: 10px;
     }
+   
 
     .contenaire
     {
