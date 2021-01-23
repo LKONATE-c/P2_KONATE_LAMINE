@@ -4,7 +4,7 @@
            
    }
 
-p 
+p,::placeholder
 {
     font-family: "Raleway" ,sans-serif 
 
@@ -16,28 +16,24 @@ a
     text-decoration: none;
 
 }
- #titrep
+ header
  {
     display: flex;
-    
-    align-content:space-between;
     justify-content:space-between;
-
+    
  }  
 
- #titrep img
- {
-width:110%;
- }
+.logo
+{
+    flex-grow:1;
+
+}
+ 
 .menu
 {
     
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 15px;
-    width: 400px;
-
+    padding-top: 20px;
+    color: #0065FC;
     
 }
 
@@ -45,34 +41,46 @@ width:110%;
 {   
     text-decoration: none;
     color:  #0065FC;
-}
-.menu p
-{
+    margin-right: 50px;
     border-top: 3px solid transparent;
     padding-top: 20px;
-    width: 80px;
-    color: #0065FC;
-    justify-content: space-around;
 }
-.menu p:hover
+
+.menu a:hover
 {
 
 border-top-color: #0065FC;
+
+}
+
+
+.inscrire
+{
+
+    margin-right: 0px;
 }
 
 
 
-.activite {
+.activite 
+{  
     color: black !important;
+    
 }
 
 .nav
 {
     display: flex;
-    
+    height: 40px;
 }
 
-.logo
+
+
+
+
+    
+
+.icone
 {background-color: #F2F2F2;
     padding: 0.8em;
     border-top-left-radius: 16px 16px;
@@ -86,6 +94,7 @@ border-top-color: #0065FC;
     border-bottom-right-radius: 16px 16px;
     color:#0065FC ;
     border-left: none;
+
 }
 
  
@@ -96,6 +105,11 @@ border-top-color: #0065FC;
     border: none;
     color: white;
     border-left: none;
+}
+
+.fa-search
+{
+    font-size: 0px;
 }
 
 input
@@ -130,7 +144,8 @@ input::placeholder
     display: flex;
     align-content: space-around;
     list-style-type:none ;
-    
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 .buttonf
 {   display: flex;
@@ -160,7 +175,11 @@ h3{
     background-color: lightblue;
     
 }
-    
+   
+.filtre:hover
+{
+    background-color: blue;
+}
 
 
 .fa-info
@@ -185,7 +204,7 @@ h3{
     height: auto;
     justify-content: space-between;
     border:1px solid #F2F2F2;
-    padding: 20px;
+    
 }
 #hébergement
 {  
@@ -417,11 +436,9 @@ flex-direction: column;
     
 img
   {
-    
-    
-    border-top-left-radius: 8px;
-    height: 100%;
     max-width: 100%;
+    height: 100%;
+    border-top-left-radius: 8px;
     object-fit:cover ;
   }
 .endtext
@@ -434,53 +451,70 @@ img
 }
 .info
 {
-    
-    padding-left: 20px;
-    padding-right:250px;
 
 }
 
 
-@media   (max-width: 414px) 
+@media (min-width:360px) and (max-width: 1024px) 
 {
-
-    #titrep
+    Img
     {
-        max-width: 500px;
+        padding-top: 28px;
+        margin-right: 75px;
+        height: auto;
     }
     
-    .menu /*todo*/
+    .menu a:hover
     {
-        width:100px;
-    }
     
+    border-bottom-color:3px solid #0065FC;
+    
+    }
         
     
+    
+    .menu
+    {   display:flex ;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        
+    }
 
-    .menu p:nth-child(1)
+    .inscrire
+    {
+        padding-top: 28px;
+        margin-left: 100px;
+    }
+    .menu-heberge
+    {
+
+        justify-content: space-between;
+    }
+
+    .menu a:nth-child(1)
     {
         order: 2;
-        flex-wrap: wrap;
+        
     }
     
-    .menu p:nth-child(2)
+    .menu a:nth-child(2)
     {
         order: 3;
 
     }
 
-    .menu p:nth-child(3)
+    .menu a:nth-child(3)
     {
 
         order: 1;
     }
-    .menu p
+    .menu a
     {
-
         padding-top: 15px;
+        
     }
 
-    .menu p:hover
+    .menu a:hover
     {
         color: #0065FC;
         border-bottom-color: #0065FC;
@@ -490,10 +524,13 @@ img
    
     .menub
     {
-    max-width: 150PX;
+    
     flex-wrap: wrap;
     }
-    
+    .romantique
+    {
+        padding-top: 10px;
+    }
 
     .contenaire
     {
@@ -518,33 +555,44 @@ img
     }
 
 
-    .acta
+    .acta,.actb
     {
         
         height: auto;
         width: 80%;
-        margin-top: 4%;
+        
         margin-bottom: 4%;
         
     }
 
-    .actb
+    
+
+    .cadreb,.cadrec,.cadred,.cadree,.cadre
     {
-        height: auto;
-        width: 80%;
+        height: 9.375rem;
+        margin-left: 30px;
     }
 
+    .cadrelieu
+    {
+        height: 20%;
+    }
+    
 
-    .actiphoto
+
+    .actiphoto,.actiphotob,.actiphotoc,.actiphotod
 {
-    height: 150px;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+    height: 80%;
     
     
 }
 
-    .footage
+    
+
+    
+
+
+    .endtext
     {
         flex-direction: column;
 
