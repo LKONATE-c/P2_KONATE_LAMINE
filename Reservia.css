@@ -34,7 +34,7 @@ a
     
     padding-top: 20px;
     color: #0065FC;
-    
+  
 }
 
 .menu a
@@ -147,6 +147,14 @@ input::placeholder
     flex-wrap: wrap;
     flex-direction: row;
 }
+
+
+liste-filtres :hover
+{
+
+    background-color: #0065FC;
+
+}
 .buttonf
 {   display: flex;
     flex-direction: row;
@@ -176,7 +184,7 @@ h3{
     
 }
    
-.filtre:hover
+.buttonf:hover
 {
     background-color: blue;
 }
@@ -366,7 +374,7 @@ flex-direction: column;
     border: 1px solid #ddd;
     border-radius: 8px;
     margin-right: 30px;
-    margin-bottom: 4%;
+    margin-bottom: 8%;
 }
 
 
@@ -385,7 +393,7 @@ flex-direction: column;
     border: 1px solid #ddd;
     border-radius: 8px;
     margin-right: 30px;
-    margin-bottom: 4%;
+    margin-bottom: 11%;
 }
 
 .cadree
@@ -458,22 +466,20 @@ img
 @media (min-width:360px) and (max-width: 1024px) 
 {
     
-    
-    
-    .menu a:hover
-    {
-    
-    border-bottom-color:3px solid #0065FC;
-    
-    }
-        
-    
-    
     .menu
     {   display:flex ;
         justify-content: space-between;
         flex-wrap: wrap;
         
+        border-bottom-color:3px solid #0065FC;
+        
+    }
+
+    .menu a:hover
+    {
+    text-decoration: #0065FC;
+    border-bottom-color:3px solid #0065FC;
+    
     }
 
     .inscrire
@@ -524,7 +530,7 @@ img
     flex-wrap: wrap;
     }
     
-    .romantique
+    .romantique 
     {
         padding-top: 10px;
         padding-bottom: 10px;
@@ -570,6 +576,11 @@ img
     {
         height: 9.375rem;
         margin-left: 30px;
+    }
+
+    .cadreb,.cadred
+    {
+        margin-bottom: 4%;
     }
 
     .cadrelieu
