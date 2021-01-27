@@ -4,9 +4,9 @@
            
    }
 
-p,::placeholder
+p,::placeholder,.menub,.cadrelieu
 {
-    font-family: "Raleway" ,sans-serif 
+    font-family: "Raleway" ,arial,serif,sans-serif;
 
     
 }
@@ -26,6 +26,7 @@ a
 .logo
 {
     flex-grow:1;
+    padding-left: 20px;
 
 }
  
@@ -67,37 +68,38 @@ border-top-color: #0065FC;
     color: black !important;
     
 }
+#carte
+{
+    padding-left: 20px;
+
+}
+
 
 .nav
 {
     display: flex;
     height: 40px;
+    margin-bottom: 10px;
 }
 
-
-
-
-
-    
-
 .icone
-{background-color: #F2F2F2;
+{
+    background-color: #F2F2F2;
     padding: 0.8em;
     border-top-left-radius: 16px 16px;
     border-bottom-left-radius: 16px 16px;
 
 }
 .cher
-{ background-color: #0065FC;
+{   background-color: #0065FC;
     padding:0.8em ;
     border-top-right-radius:16px 16px ;
     border-bottom-right-radius: 16px 16px;
-    color:#0065FC ;
+    color:white ;
     border-left: none;
+    
 
 }
-
- 
 
 .button
 {
@@ -105,11 +107,17 @@ border-top-color: #0065FC;
     border: none;
     color: white;
     border-left: none;
+    
+    
 }
+
 
 .fa-search
 {
-    font-size: 0px;
+    display: none;
+    border-top-right-radius: 16px 16px;
+    border-bottom-right-radius: 16px 16px;
+    
 }
 
 input
@@ -132,9 +140,13 @@ input::placeholder
 .menub
 {
     display: flex;
-    font-family: "Raleway",arial,serif;
-    
+    padding-left: 20px;
 }  
+
+.nbrelogement
+{
+    padding-left: 20px;
+}
 
 
 
@@ -146,15 +158,23 @@ input::placeholder
     list-style-type:none ;
     flex-wrap: wrap;
     flex-direction: row;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 
-liste-filtres :hover
+.liste-filtres :hover
 {
 
     background-color: #0065FC;
 
 }
+
+.liste-filtres li
+{
+    margin-bottom: 5px;
+}
+
 .buttonf
 {   display: flex;
     flex-direction: row;
@@ -172,7 +192,8 @@ body > div > ul > li > button > strong
     padding: 10px;
     
 }
-h3{
+h3,
+{
     padding: 0.5em;
 }
 .filtre
@@ -195,7 +216,7 @@ h3{
     border:1px solid #F2F2F2;
     border-radius: 50%;
     color:#0065FC;
-   
+    
 }
 
 
@@ -230,6 +251,12 @@ h3{
 h4
 { 
     font-size: 20px;
+    padding-left: 20px;
+}
+
+.affichage
+{
+    padding-left: 20px;
 }
 
 .populaire
@@ -254,8 +281,10 @@ h4
     border: 1px solid #ddd;
     font-size: 13px;
     text-align:left;
-    
+    box-shadow: 0 4px 4px #ddd ;
 }
+
+.lieu
     
 .photoh
 {
@@ -266,6 +295,7 @@ h4
     height: 100px;
     margin-top: 2px;
     justify-content: center;
+    object-fit:cover ;
 }
 
 
@@ -309,6 +339,7 @@ padding: 1.5em;
     font-size: 12px;
     display: flex;
     justify-content: space-around;
+    box-shadow: 0 4px 4px #ddd ;
     
 }
 .popu_legende
@@ -329,7 +360,7 @@ flex-direction: column;
     border-bottom-left-radius: 8px;
     width: 75px;
     height: 150px;
-    
+    object-fit:cover ;
 
 }
 
@@ -342,7 +373,12 @@ flex-direction: column;
     flex-wrap: wrap;
 }
 
-.acta
+h5
+{
+    font-size: 20px;
+}
+
+.acta,.actb
 {
     
     height: 400px;
@@ -357,7 +393,7 @@ flex-direction: column;
    width:25%;
    min-width: 200px;
    justify-content: space-around;
-   
+ 
 }
 
 .cadre
@@ -366,88 +402,91 @@ flex-direction: column;
     border-radius: 8px;
     margin-left: 30px;
     margin-right: 30px;
+    box-shadow: 0 4px 4px #ddd ;
+}
 
+.cadreb,.cadrec,.cadred,.cadree
+{
+   
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-right: 30px;
+    box-shadow: 0 4px 4px #ddd ;
 }
 
 .cadreb
 {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    margin-right: 30px;
-    margin-bottom: 8%;
-}
-
-
-.cadrec
-{
    
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    margin-right: 30px;
+    margin-bottom: 8%;
     
 }
+
+
+
 
 .cadred
 {
    
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    margin-right: 30px;
     margin-bottom: 11%;
-}
-
-.cadree
-{
-   
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    margin-right: 30px;
     
 }
-
 
 .actiphoto
 {
     height: 300px;
+    
+}
+
+.actiphoto,.actiphotob,.actiphotoc,.actiphotod
+{
+    width: 100%;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
-    width: 100%;
+    object-fit:cover ;
+
+
+}
+
+.actiphoto
+{
+    height: 300px;
+    
 }
 
 .actiphotob
 {
 
     height: 150px;
-    width:100%;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+    
 }
 
 .actiphotoc
 {
     height: 100px;
-    width: 100%;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+   
 }
 
 .actiphotod
 {
     height: 120px;
-    width: 100%;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-
+    
 
 }
+.cadrelieu
+{
+    color: black;
+    font-weight: bold;
+    height: 25%;
+}
+
 
     
 img
   {
     max-width: 100%;
     height: 100%;
-    border-top-left-radius: 8px;
-    object-fit:cover ;
+    
+
   }
 .endtext
 {
@@ -457,41 +496,67 @@ img
     display: flex;
     flex-direction: row;
 }
-.info
+
+.info-a
 {
+    padding-left: 20px;
+}
+
+.info-c
+{
+    padding-right: 350px;
 
 }
 
 
+
 @media (min-width:360px) and (max-width: 1024px) 
-{
+{   
+    .logo img
+    {
+
+        width: auto;
+        padding-bottom: 30px;
+    }
+
+    .logo
+    {
+        margin-bottom: 45px;
+    }
     
-    .menu
+    .menu 
     {   display:flex ;
         justify-content: space-between;
         flex-wrap: wrap;
         
-        border-bottom-color:3px solid #0065FC;
         
     }
 
+    .menu a
+    {
+        border-bottom: solid transparent ;
+        padding-bottom: 20px;
+        border-top: none;
+        
+    }
+    
     .menu a:hover
     {
-    text-decoration: #0065FC;
-    border-bottom-color:3px solid #0065FC;
-    
+        border-bottom-color: #0065FC;
+
     }
+
+
+
+
 
     .inscrire
     {
         padding-top: 28px;
         margin-left: 100px;
+    
     }
-    .menu-heberge
-    {
-
-        justify-content: space-between;
-    }
+   
 
     .menu a:nth-child(1)
     {
@@ -510,18 +575,30 @@ img
 
         order: 1;
     }
-    .menu a
+    
+
+    .cher
     {
-        padding-top: 15px;
-        
+        border-bottom-left-radius: 16px 16px;
+        border-top-left-radius: 16px 16px;
+
     }
 
-    .menu a:hover
-    {
-        color: #0065FC;
-        border-bottom-color: #0065FC;
     
+
+    .button
+    {
+
+        display: none;
+
     }
+
+
+    .fa-search
+{   
+    display: inline;
+    visibility: visible;
+}
     
    
     .menub
@@ -530,12 +607,7 @@ img
     flex-wrap: wrap;
     }
     
-    .romantique 
-    {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-   
+    
 
     .contenaire
     {
@@ -597,15 +669,17 @@ img
     
 }
 
-    
-
-    
-
 
     .endtext
     {
         flex-direction: column;
 
+
+    }
+
+    .info-b,.info-c
+    {
+        padding-left: 20px;
 
     }
 
