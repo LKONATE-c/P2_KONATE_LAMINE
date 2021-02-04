@@ -4,7 +4,7 @@
            
    }
 
-p,::placeholder,.menub,.cadrelieu
+p,::placeholder,.menub,.cadrelieu,.menu a,
 {
     font-family: "Raleway" ,arial,serif,sans-serif;
 
@@ -19,46 +19,55 @@ a
  header
  {
     display: flex;
-    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
     
  }  
 
-.logo
+.header-logo
 {
     flex-grow:1;
     padding-left: 20px;
-
+    height: 35px;
+    width: 60px;
 }
  
-.menu
+nav
 {
-    
-    padding-top: 20px;
+    display: flex;
+    width: 300px;
+    justify-content: space-around;
     color: #0065FC;
   
 }
 
-.menu a
-{   
+
+.header-nav-menu a,.header-inscrire a
+ {
+    padding: 0 20px;
     text-decoration: none;
-    color:  #0065FC;
-    margin-right: 50px;
     border-top: 3px solid transparent;
-    padding-top: 20px;
+    padding-top: 10PX;
+
 }
 
-.menu a:hover
+
+.header-nav-menu a:hover
 {
 
-border-top-color: #0065FC;
+    border-top-color: #0065FC;
+}
 
+.header-inscrire a:hover
+{
+    border-top-color: #0065FC;
 }
 
 
 .inscrire
 {
     font-weight: bold;
-    margin-right: 0px;
+    color: #0065FC;
 }
 
 
@@ -90,7 +99,7 @@ border-top-color: #0065FC;
     border-bottom-left-radius: 16px 16px;
 
 }
-.cher
+.recherche
 {   background-color: #0065FC;
     padding:0.8em ;
     border-top-right-radius:16px 16px ;
@@ -140,7 +149,7 @@ input::placeholder
 .menub
 {
     display: flex;
-    padding-left: 20px;
+    
 }  
 
 .nbrelogement
@@ -185,9 +194,9 @@ body > div > ul > li > button > strong
     padding: 10px;
     
 }
-h3
+.entete-filtres
 {
-    padding: 0.5em;
+    padding: 1.5em;
 }
 .filtre
 {
@@ -200,15 +209,15 @@ h3
    
 .buttonf :hover
 {
-    background-color:#0065FC;
-    color: white;
+    
+    color: red;
 }
 
 
 
 .fa-info
 {
-    border:1px solid black;
+    border:1px solid   #F2F2F2;
     border-radius: 50%;
     color:#0065FC;
     width: 20px !important;
@@ -223,7 +232,8 @@ h3
 {
     display: flex;
     justify-content: space-between;
-    
+    margin-right: 2%;
+    margin-left: 2%;
 }
 .contenu
 {
@@ -236,7 +246,7 @@ h3
 }
 #hébergement
 {  
-    width: 58%;
+    width: 70%;
     
     
 }
@@ -272,7 +282,7 @@ h4
     background-color: white;
     height: 150px;
     width: 200px;
-    margin: 20px 20px;
+    margin: 4% 4%;
     border-radius:  20px 20px ;
     padding-top: 0.2em; 
     padding-left: 0.5em;
@@ -283,7 +293,7 @@ h4
     box-shadow: 0 4px 4px #ddd ;
 }
 
-.lieu
+
     
 .photoh
 {
@@ -520,75 +530,10 @@ img
 }
 
 @media screen and (min-width:360px) and (max-width: 1024px) 
-{   
-    .logo img
-    {
-
-        width: auto;
-        padding-bottom: 30px;
-    }
-
-    .logo
-    {
-        margin-bottom: 45px;
-    }
-    
-    .menu 
-    {   display:flex ;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        position: absolute;
-        left: 100px;
-        right: 0;
-    }
-
-    .menu a
-    {
-        border-bottom: solid transparent ;
-        padding-bottom: 20px;
-        border-top: none;
-        
-    }
-    
-    .menu a:hover
-    {
-        border-bottom-color: #0065FC;
-
-    }
-
-
-
-
-
-    .inscrire
-    {
-        padding-top: 28px;
-        margin-left: 170px;
-       
-        
-    }
-   
-
-    .menu a:nth-child(1)
-    {
-        order: 2;
-        
-    }
-    
-    .menu a:nth-child(2)
-    {
-        order: 3;
-
-    }
-
-    .menu a:nth-child(3)
-    {
-
-        order: 1;
-    }
+{     
     
 
-    .cher
+    .recherche
     {
         border-bottom-left-radius: 16px 16px;
         border-top-left-radius: 16px 16px;
@@ -719,17 +664,168 @@ img
     }
 
 }
-@media screen and (min-width:450px) and  (max-width: 1024px) 
+
+@media only screen and (max-width: 503px) {
+    nav {
+        flex-grow: 1;
+        order: 3;
+    }
+
+    .header-inscrire {
+        order: 2;
+    }
+
+    .header-nav-menu a,.header-inscrire a
+    {
+
+        border-bottom: 3px solid transparent;
+        border-top: none;
+    }
+    
+    .header-nav-menu a:hover
 {
 
-    .inscrire
-    {
-        margin-left: 110px;
-    }
-
-    .menu a
-    {
-        margin-right: 0px;
-    }
-
+    border-bottom-color: #0065FC;
+    padding-bottom: 10px;
 }
+
+    .header-inscrire a:hover
+{
+    border-bottom-color: #0065FC;
+}
+/*
+    .cher
+    {
+        border-bottom-left-radius: 16px 16px;
+        border-top-left-radius: 16px 16px;
+
+    }
+
+    
+
+    .button
+    {
+
+        display: none;
+
+    }
+
+
+    .fa-search
+{   
+    display: inline;
+    visibility: visible;
+}
+    
+   
+    .menub
+    {
+    
+    flex-wrap: wrap;
+    }
+    
+    .liste-filtres
+    {
+        padding-left: 20px;
+    }
+    
+
+    .contenaire
+    {
+        flex-direction: column-reverse;
+        
+    }
+    
+    .populaire
+    {
+        width: auto;
+    
+        border-radius: 0px;
+    }
+
+    .popu
+    {
+        width: 88vw;
+        margin: 0px 0px;
+        margin-bottom: 10px;
+    }
+
+    .photop
+    {
+        width: 40vw;
+    }
+
+    
+    #hébergement
+    {
+        width: 100%;
+        background-color: white;
+        border-radius: 0px;
+    }
+
+    .lieu
+    {
+        padding-right: 0.5em;
+        width: 86vw;
+        margin: 0px 0px;
+        margin-bottom: 10px;
+    }
+
+    .photoh
+    {
+        width: 95vw !important;
+    }
+
+    .acta,.actb
+    {
+        
+        height: auto;
+        width: 80%;
+        
+        margin-bottom: 4%;
+        
+    }
+
+    
+
+    .cadreb,.cadrec,.cadred,.cadree,.cadre
+    {
+        height: 200px;
+        margin-left: 0px;
+        width: 89vw;
+    }
+
+    .cadreb,.cadred
+    {
+        margin-bottom: 4%;
+    }
+
+    .cadrelieu
+    {
+        height: 20%;
+    }
+    
+
+
+    .actiphoto,.actiphotob,.actiphotoc,.actiphotod
+{
+    height: 80%;
+    
+    
+}
+
+
+    .endtext
+    {
+        flex-direction: column;
+
+
+    }
+
+    .info-b,.info-c
+    {
+        padding-left: 20px;
+        padding-right: 0px;
+    }
+}
+*/

@@ -13,12 +13,18 @@
 <body>
 
     <header>
-        <div class="logo">
+        <div class="header-logo">
             <img src="images/logo/Reservia.svg" alt="reservia">
         </div>
-        <div class="menu">
+        <nav>
+            <div class="header-nav-menu">
             <a class="menu-heberge" href="#hébergement">hébergement</a>
+            </div>
+            <div class="header-nav-menu">
             <a class="activite" href="#Activités">Activités</a>
+            </div>
+        </nav>
+        <div class="header-inscrire">
             <a class="inscrire" href="#">S'inscrire</a>
         </div>
 
@@ -29,7 +35,7 @@
 
     <!--section find-->
     <section id="carte">
-        <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
         <p>En plein centre ville ou en pleine nature</p>
 
 
@@ -42,12 +48,13 @@
 
             <!--champ de saisie -->
             <div>
-                <input type="text" placeholder="Marseille,france">
+                <input type="search" id="town-search" placeholder="Marseille,france">
             </div>
+            
 
             <!--bouton de recherche pas fonctionel-->
-            <div class="cher">
-                <button class="button">Recherche</button>
+            <div class="recherche">
+                <button type="submit" class="button">Recherche</button>
                 <i class="fas fa-search"></i>
             </div>
 
@@ -61,8 +68,9 @@
     <!--section filtres pour paufiner les choix de recherche-->
 
     <div class="menub">
-        <h3>Filtres</h3>
-
+        <div class="entete-filtres">
+        <strong>Filtres</strong>
+        </div>
         <ul class="liste-filtres">
             <li><button class="buttonf"><i
                         class="fas fa-money-bill-wave filtre"></i><strong>Economique</strong></button></li>
@@ -82,13 +90,13 @@
 
     <!--section hébergement-->
 
-    <section class="contenaire">
+    <div class="contenaire">
 
 
 
         <section class="contenu" id="hébergement">
 
-            <h4>Hébergement à Marseille</h4>
+            <h2>Hébergement à Marseille</h2>
             <div class="hebergement-flex">
                 <div class="lieu">
                     <a href="#">
@@ -186,7 +194,7 @@
         </section>
 
         <!--section populaire-->
-        <section class="contenu populaire">
+        <aside class="contenu populaire">
             <div class="topopu">
                 <h4>Les plus populaires</h4>
                 <i class="fas fa-chart-line"></i>
@@ -261,8 +269,8 @@
                 </div>
             </div>
 
-        </section>
-    </section>
+        </aside>
+    </div>
 
 
 
