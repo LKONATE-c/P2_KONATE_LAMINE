@@ -225,9 +225,6 @@ body > div > ul > li > button > strong
 }
 
 
-
-
-
 .contenaire
 {
     display: flex;
@@ -249,6 +246,12 @@ body > div > ul > li > button > strong
     width: 70%;
     
     
+}
+h2
+{
+    font-size: 20px;
+    margin-left: 4%;
+    padding-top: 10px;
 }
 .hebergement-flex
 {
@@ -529,6 +532,14 @@ img
     height: 30px;
 }
 
+@media only screen and (min-width:1025px) and (max-width:1097px)
+ {
+    .popu
+    {
+        width: auto;
+    }
+}
+
 @media screen and (min-width:360px) and (max-width: 1024px) 
 {     
     
@@ -693,6 +704,8 @@ img
 {
     border-bottom-color: #0065FC;
 }
+
+
 /*
     .cher
     {
