@@ -383,9 +383,15 @@ padding-left: 10px;
 {
     
     justify-content: space-between;
+    
+}
+
+.acti-marseille
+{
     display: flex;
     flex-wrap: wrap;
 }
+
 
 h5
 {
