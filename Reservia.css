@@ -4,12 +4,15 @@
            
    }
 
-p,::placeholder,.menub,.cadrelieu,.menu a,
+p,::placeholder,.menub,.cadrelieu,.menu a,h2,h4,h1
 {
     font-family: "Raleway" ,arial,serif,sans-serif;
 
-    
 }
+    
+
+    
+
 
 a
 {
@@ -37,8 +40,9 @@ nav
     display: flex;
     width: 300px;
     justify-content: space-around;
-    color: #0065FC;
+    
   
+
 }
 
 
@@ -48,6 +52,7 @@ nav
     text-decoration: none;
     border-top: 3px solid transparent;
     padding-top: 10PX;
+    color: #0065FC;
 
 }
 
@@ -99,9 +104,9 @@ nav
     border-bottom-left-radius: 16px 16px;
 
 }
-.recherche
+.boutton-recherche
 {   background-color: #0065FC;
-    padding:0.8em ;
+    padding:0.6em ;
     border-top-right-radius:16px 16px ;
     border-bottom-right-radius: 16px 16px;
     color:white ;
@@ -327,7 +332,7 @@ h4
 
 .fa-chart-line
 {
-padding: 1.5em;
+padding: 2em;
 
 }
 
@@ -497,6 +502,9 @@ h5
 {
     color: black;
     font-weight: bold;
+    padding-left: 10px;
+    padding-top: 10px;
+    height: 30px;
     
 }
 
@@ -529,14 +537,7 @@ img
 
 }
 
-.cadrelieu
-{
-    color: black;
-    font-weight: bold;
-    padding-left: 10px;
-    padding-top: 10px;
-    height: 30px;
-}
+
 
 @media only screen and (min-width:1025px) and (max-width:1097px)
  {
@@ -550,7 +551,7 @@ img
 {     
     
 
-    .recherche
+    .boutton-recherche
     {
         border-bottom-left-radius: 16px 16px;
         border-top-left-radius: 16px 16px;
@@ -711,140 +712,3 @@ img
     border-bottom-color: #0065FC;
 }
 
-
-/*
-    .cher
-    {
-        border-bottom-left-radius: 16px 16px;
-        border-top-left-radius: 16px 16px;
-
-    }
-
-    
-
-    .button
-    {
-
-        display: none;
-
-    }
-
-
-    .fa-search
-{   
-    display: inline;
-    visibility: visible;
-}
-    
-   
-    .menub
-    {
-    
-    flex-wrap: wrap;
-    }
-    
-    .liste-filtres
-    {
-        padding-left: 20px;
-    }
-    
-
-    .contenaire
-    {
-        flex-direction: column-reverse;
-        
-    }
-    
-    .populaire
-    {
-        width: auto;
-    
-        border-radius: 0px;
-    }
-
-    .popu
-    {
-        width: 88vw;
-        margin: 0px 0px;
-        margin-bottom: 10px;
-    }
-
-    .photop
-    {
-        width: 40vw;
-    }
-
-    
-    #hébergement
-    {
-        width: 100%;
-        background-color: white;
-        border-radius: 0px;
-    }
-
-    .lieu
-    {
-        padding-right: 0.5em;
-        width: 86vw;
-        margin: 0px 0px;
-        margin-bottom: 10px;
-    }
-
-    .photoh
-    {
-        width: 95vw !important;
-    }
-
-    .acta,.actb
-    {
-        
-        height: auto;
-        width: 80%;
-        
-        margin-bottom: 4%;
-        
-    }
-
-    
-
-    .cadreb,.cadrec,.cadred,.cadree,.cadre
-    {
-        height: 200px;
-        margin-left: 0px;
-        width: 89vw;
-    }
-
-    .cadreb,.cadred
-    {
-        margin-bottom: 4%;
-    }
-
-    .cadrelieu
-    {
-        height: 20%;
-    }
-    
-
-
-    .actiphoto,.actiphotob,.actiphotoc,.actiphotod
-{
-    height: 80%;
-    
-    
-}
-
-
-    .endtext
-    {
-        flex-direction: column;
-
-
-    }
-
-    .info-b,.info-c
-    {
-        padding-left: 20px;
-        padding-right: 0px;
-    }
-}
-*/
